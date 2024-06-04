@@ -10,7 +10,9 @@ class PostsController < ApplicationController
     
     post = Post.create(content: params[:content])
     #新たに投稿されたメモの内容を変数postに格納
-    redirect_to action: :index
+    
+    
+    #使わなかったのredirect_to action: :index
      #redirect_toを用いることでindex.html.erbを返す
 
      render json:{ post: post }
